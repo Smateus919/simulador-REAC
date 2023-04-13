@@ -1,0 +1,109 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+}
+
+.vehicle{
+    width: 50%;
+    padding-top: 5rem;
+}
+
+.speed-img{
+    position: relative;
+    width: 500px;
+    img{
+        width: 100%;
+    }
+}
+
+.speed-text{
+    width: 10rem;
+    padding: .5rem;
+    margin: .5rem 0 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    color: red;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border: solid 2px white;
+    border-radius: 10px;
+    p{
+        margin: 0;
+    }
+}
+
+.pedals{
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    .pedal{
+        cursor: pointer;
+    }
+}
+
+.tablet{
+    width: 50%;
+    margin-top: 10rem;
+    position: relative;
+    .tablet-frame{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    .menu-tablet{        
+        position: absolute;
+        top: .5rem;
+        left: 2rem;
+        object-fit: cover;
+        width: 85%;
+    }
+    .alert{
+        position: absolute;
+        top: 8rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .card{
+            width: 70%;
+            padding: .5rem;
+            background-color: black;
+            border: solid red 1.5px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        p, h3{
+            margin: 0;
+        }
+    }
+
+    .star-btn{
+        position: absolute;            
+        bottom: 10rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+            border: red solid 1px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            font-size: x-large;
+            padding: .5rem 1rem;
+        }
+    }
+}
